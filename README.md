@@ -11,3 +11,10 @@ Stream<Integer> myStream = myList.**stream()**;
 
 myStream.**forEach**(e -> System.out.println(e));
 
+
+## map() ##
+
+String[] myArray = new String[]{"bob", "alice", "paul", "ellie"};
+Stream<String> myStream = Arrays.stream(myArray);
+Stream<String> myNewStream =
+                myStream.**map**(s -> s.toUpperCase());
