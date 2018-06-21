@@ -20,4 +20,12 @@ Stream<String> myStream = Arrays.stream(myArray);
 
 Stream<String> myNewStream = myStream.**map**(s -> s.toUpperCase());
 
+## filter() ##
 
+String[] myArray = new String[]{"bob", "alice", "paul", "ellie"};
+
+String[] myNewArray = Arrays.stream(myArray)
+  .**filter**(s -> s.length() > 4)
+  .**toArray**(String[]::new);
+  
+  
