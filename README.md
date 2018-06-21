@@ -28,10 +28,13 @@ String[] myNewArray = Arrays.stream(myArray).**filter**(s -> s.length() > 4).**t
 ## sum() ##
 
 int myArray[] = { 1, 5, 8 };
+
 int sum = Arrays.stream(myArray).**sum()**;
 
 ## reduce() ##
 
 String[] myArray = { "this", "is", "a", "sentence" };
+
 String result = Arrays.stream(myArray).**reduce**("", (a,b) -> a + b);
+
 // result is "thisisasentence"
