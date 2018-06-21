@@ -11,7 +11,6 @@ Stream<Integer> myStream = myList.**stream()**;
 
 myStream.**forEach**(e -> System.out.println(e));
 
-
 ## map() ##
 
 String[] myArray = new String[]{"bob", "alice", "paul", "ellie"};
@@ -24,10 +23,12 @@ Stream<String> myNewStream = myStream.**map**(s -> s.toUpperCase());
 
 String[] myArray = new String[]{"bob", "alice", "paul", "ellie"};
 
-String[] myNewArray = Arrays.stream(myArray)
+String[] myNewArray = Arrays.stream(myArray).**filter**(s -> s.length() > 4).**toArray**(String[]::new);
 
-   .**filter**(s -> s.length() > 4)
-          
-   .**toArray**(String[]::new);
-  
-  
+## sum() ##
+
+int myArray[] = { 1, 5, 8 };
+int sum = Arrays.stream(myArray).**sum()**;
+
+## reduce() ##
+
