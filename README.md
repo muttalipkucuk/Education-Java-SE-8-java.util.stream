@@ -26,8 +26,8 @@ String[] myArray = new String[]{"bob", "alice", "paul", "ellie"};
 
 String[] myNewArray = Arrays.stream(myArray)
 
-          .**filter**(s -> s.length() > 4)
+   .**filter**(s -> s.length() > 4)
           
-          .**toArray**(String[]::new);
+   .**toArray**(String[]::new);
   
   
