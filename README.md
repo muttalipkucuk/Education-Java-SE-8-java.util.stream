@@ -18,5 +18,6 @@ String[] myArray = new String[]{"bob", "alice", "paul", "ellie"};
 
 Stream<String> myStream = Arrays.stream(myArray);
 
-Stream<String> myNewStream =
-                myStream.**map**(s -> s.toUpperCase());
+Stream<String> myNewStream = myStream.**map**(s -> s.toUpperCase());
+
+
