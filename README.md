@@ -32,3 +32,6 @@ int sum = Arrays.stream(myArray).**sum()**;
 
 ## reduce() ##
 
+String[] myArray = { "this", "is", "a", "sentence" };
+String result = Arrays.stream(myArray).**reduce**("", (a,b) -> a + b);
+// result is "thisisasentence"
